@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="game_field">
+        <div class="result-game">
+            <div class="result-game__data">
+                <h1>Результаты игры:</h1>
+                <div class="right-ans">Верных ответов: <span>1</span></div>
+                <div class="wrong-ans">Неверных ответов: <span>2</span></div>
+                <button class="restart-game">Начать заново</button>
+            </div>
+        </div>
+        <div class="intro">
+            <div class="intro__content">
+                <h1>Игра, кто хочет стать миллионером</h1>
+                <p>Ответьте на 5 сложнейших вопросов и станьте миллионером!</p>
+                <button>Начать игру</button>
+            </div>
+        </div>
+        <div class="game">
+            <div class="question-wrapper">
+                <p class="head-question">Вопрос <span class="number-question">1</span> из <span class="all-questions">7</span></p><button class="stop_game">Остановить игру</button>
+                <p class="question"></p>
+                <!-- <p class="question">Зимой белый, летом серый! Кто это?</p> -->
+            </div>
+            <div class="response-status"></div>
+            <div class="timer-wrapper">
+                <p class="timer-question">3</p>
+            </div>
+            <div class="answers">
+                <h2>Выберите правильный вариант ответа:</h2>
+                <div class="wrapper__possible-answer">
+                    <!-- <div class="possible-answer"><span>A:</span> Заяц</div>
+                    <div class="possible-answer"><span>B:</span> Шифер на крыше</div>
+                    <div class="possible-answer"><span>C:</span> Асфальт</div>
+                    <div class="possible-answer"><span>D:</span> Форма у военного</div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app/question.js"></script>
+    <script src="app/game.js"></script>
+</body>
+</html>
